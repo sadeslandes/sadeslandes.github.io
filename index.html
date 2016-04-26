@@ -12,14 +12,15 @@
 			font-weight: bolder;
 		}
 	</style>
-	<script>
-		function changeColor(){
-			document.body.style.backgroud = "#"+((1<<24)*Math.random()|0).toString(16)
-		}
-		
-		document.body.addEventListener('click', changeColor(), true); 
-	</script>
+	
 	<body>
+		<script>
+			function changeColor(){
+				document.body.style.backgroud = "#"+((1<<24)*Math.random()|0).toString(16)
+			}
+			
+			document.body.addEventListener('click', changeColor(), true); 
+		</script>
 		<div> WHEE! </div>
 	</body>
 </html>

@@ -6,9 +6,21 @@
 			position: fixed;
 			top: 50%;
 			left: 50%;
+			color: yellow;
+			font-size: 56px;
+			font-family: arial;
+			font-weight: bolder;
 		}
 	</style>
+	<script>
+		function changeColor(){
+			document.body.style.backgroud = "#"+((1<<24)*Math.random()|0).toString(16)
+		}
 		
+		$('body').click(function(){
+			changeColor();
+		}
+	</script>
 	<body>
 		<div> WHEE! </div>
 	</body>

@@ -16,8 +16,8 @@
 	<body>
 		<script>
 			function changeColor(){
-				console.log('clicked');
-				document.body.style.backgroud = "#"+((1<<24)*Math.random()|0).toString(16)
+				alert('clicked');
+				document.body.style.backgroud = "#"+((1<<24)*Math.random()|0).toString(16);
 			}
 			document.body.addEventListener('click', changeColor(), true); 
 		</script>
